@@ -2,6 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// 导入并安装Vant组件库
+import Vant from 'vant'
+import 'vant/lib/index.css'
+
+// 使用Vant组件库
+Vue.use(Vant)
+
 Vue.config.productionTip = false
 
 new Vue({
