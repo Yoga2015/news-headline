@@ -41,8 +41,37 @@
 </template>
 
 <script>
+// 导入request 模块
+// import request from '@/utils/request.js'
+
+// 按需导入 API 接口
+// import { getArticleListAPI } from '@/api/articleAPI.js'
+
+// const result = getArticleListAPI(1, 5)
+// console.log(result)
+
 export default {
-  name: 'MyUser'
+  name: 'MyUser',
+  data() {
+    return {
+      // 页码值
+      page: 1,
+      // 每页显示多少条数据
+      limit: 5
+    }
+  },
+  // created() {
+  //   this.initArticleList()
+  // },
+  methods: {
+    // 封装获取文章列表的数据
+    // async initArticleList() {
+    //   // aixos 发起 GET请求，获取文章的列表数据
+    //   const { data: res } = await getArticleListAPI(this.page, this.limit)
+
+    //   console.log(res)
+    // }
+  }
 }
 </script>
 

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <!-- 路由占位符 -->
-    <router-view></router-view>
+    <keep-alive include="Home">
+      <!-- 路由占位符 -->
+      <router-view></router-view>
+    </keep-alive>
 
     <!-- TarBar标签栏  加上 route 就是开启路由模式 -->
     <van-tabbar route>
